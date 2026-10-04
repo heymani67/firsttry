@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player 2 — A Little Surprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="stars" id="stars"></div>
+
+  <main id="app">
+    <section class="screen active" id="startScreen">
+      <div class="window">
+        <div class="window-bar">
+          <span>♡ SURPRISE.exe</span>
+          <span>● ● ●</span>
+        </div>
+        <div class="window-body start-body">
+          <div class="cat-wrap" id="mainCat">🐈‍⬛</div>
+          <div class="system">SYSTEM MESSAGE</div>
+          <h1>I made a little<br><span>something</span> for you.</h1>
+          <p class="sub">do u wanna see it?(dare to say no boy) </p>
+          <div class="buttons">
+            <button class="game-btn yes-btn" id="yesBtn">YES ♡</button>
+            <button class="game-btn no-btn" id="noBtn">NO</button>
+          </div>
+          <p class="tiny" id="startHint">Choose wisely...</p>
+        </div>
+      </div>
+      <div class="walking-cat"> hi babe ;) </div>
+    </section>
+
+    <section class="screen" id="introScreen">
+      <div class="level-card">
+        <div class="level-tag">LEVEL 01 // CONNECTION</div>
+        <div class="pixel-cat">🐱</div>
+        <h2>PLAYER 2 FOUND</h2>
+        <div class="terminal">
+          <p>> scanning...</p>
+          <p>> connection detected</p>
+          <p>> loading memory...</p>
+          <p class="green">> <span id="typing"></span><span class="cursor">_</span></p>
+        </div>
+        <button class="game-btn" data-next="storyScreen">CONTINUE →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="storyScreen">
+      <div class="story">
+        <div class="level-tag">QUEST LOG</div>
+        <h2>How it started...</h2>
+
+        <div class="quest">
+          <div class="quest-cat">🐈</div>
+          <div>
+            <small>09 APRIL 2026</small>
+            <h3>FIRST ENCOUNTER</h3>
+            <p>Player 1 met Player 2.</p>
+            <span class="achievement">✓ QUEST COMPLETE</span>
+          </div>
+        </div>
+
+        <div class="quest">
+          <div class="quest-cat">🐈‍⬛</div>
+          <div>
+            <small>23 MAY 2026</small>
+            <h3>CONFESSION UNLOCKED</h3>
+            <p>A very important side quest suddenly became the main quest.</p>
+            <span class="achievement">🏆 ACHIEVEMENT UNLOCKED</span>
+          </div>
+        </div>
+
+        <div class="quest">
+          <div class="quest-cat">😼</div>
+          <div>
+            <small>RIGHT NOW</small>
+            <h3>PLAYER 2: BOYFRIEND</h3>
+            <p>Status: suspiciously cute.</p>
+            <span class="achievement">✓ CURRENT QUEST</span>
+          </div>
+        </div>
+
+        <button class="game-btn" data-next="statsScreen">NEXT QUEST →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="statsScreen">
+      <div class="stats-card">
+        <div class="level-tag">PLAYER PROFILE</div>
+        <div class="avatar">🐈‍⬛🎮</div>
+        <h2>Sanki</h2>
+<div class="stats-grid">
+
+  <div>
+    <span>CLASS</span>
+    <b>Boyfriend</b>
+  </div>
+
+  <div>
+    <span>SPECIES</span>
+    <b>Mallu Baddie / Cutiepie</b>
+  </div>
+
+  <div>
+    <span>SPECIAL MOVE</span>
+    <b>Makes a cute face</b>
+  </div>
+
+  <div>
+    <span>MAIN QUEST</span>
+    <b>Keep me forever ♡</b>
+  </div>
+
+  <div>
+    <span>FAVORITE THING</span>
+    <b>Gaming AND sleeping</b>
+  </div>
+
+  <div>
+    <span>WEAKNESS</span>
+    <b>Me ♡ (obviously)</b>
+  </div>
+
+</div>
+<div class="meter">
+  <label>SLEEP LEVEL(idiot)</label>
+  <div><i style="width:100%"></i></div>
+</div>
+
+<div class="meter">
+  <label>GAMER ENERGY(but u would lose against me haha)</label>
+  <div><i style="width:99%"></i></div>
+</div>
+
+<div class="meter">
+  <label>RIZZ LEVEL(lucky cuz u have the looks)</label>
+  <div><i style="width:98%"></i></div>
+</div>
+
+<div class="meter">
+  <label>ABILITY TO MAKE ME LAUGH(but im much much much funnier)</label>
+  <div><i style="width:100%"></i></div>
+</div>
+
+<button class="game-btn" data-next="counterScreen">
+  NEXT →
+</button>
+    </section>
+
+    <section class="screen" id="counterScreen">
+      <div class="counter-card">
+        <div class="level-tag">OPTIONAL SIDE QUEST</div>
+        <div class="tiny-cat">🐱</div>
+        <h2>TIME FLIES</h2>
+        <p>Since we first met its been</p>
+        <div class="counter" id="counter">0</div>
+        <div class="counter-label">DAYS</div>
+        <p class="small-note">and the timer keeps going...</p>
+        <button class="game-btn" data-next="memoryScreen">SHOW ME MORE →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="memoryScreen">
+      <div class="memory-card">
+        <div class="level-tag">MEMORY INVENTORY</div>
+        <h2>Things I Like About You</h2>
+        <div class="memory-list">
+          <button>Your random little updates</button>
+          <button>The way you make me laugh</button>
+          <button>Your gamer side</button>
+          <button>Your silly side</button>
+          <button>The little things you do</button>
+          <button>Simply having you in my life</button>
+        </div>
+        <p class="hint">click one 👀</p>
+        <div class="popup" id="memoryPopup"></div>
+        <button class="game-btn" data-next="finalScreen">FINAL LEVEL →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="finalScreen">
+      <div class="final-card">
+        <div class="gift" id="gift">🎁</div>
+        <div class="level-tag">FINAL LEVEL</div>
+        <h2 id="finalTitle">ONE LAST THING...</h2>
+        <p id="finalText">You made it this far, so I guess you deserve the final unlock.</p>
+        <button class="game-btn" id="openGift">OPEN GIFT 🎁</button>
+        <button class="game-btn" id="goToGallery">SEE OUR MEMORIES 📸 </button>
+      </div>
+    </section>
+    <!-- PHOTO GALLERY -->
+
+    <section class="screen" id="galleryScreen">
+      <div class="gallery-card">
+
+        <div class="level-tag">BONUS LEVEL UNLOCKED</div>
+
+    <h2>OUR PHOTO GALLERY</h2>
+
+    <p class="gallery-subtitle">
+      Little pieces of us ♡
+    </p>
+
+    <div class="photo-gallery">
+
+      <div class="photo-card">
+        <img src="images/photo1.jpeg" alt="Memory 1">
+        <p>one of my favorites ♡</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo2.jpeg" alt="Memory 2">
+        <p>look at us 😭</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo3.jpeg" alt="Memory 3">
+        <p>another memory ♡</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo4.jpeg" alt="Memory 4">
+        <p>we look so good together pls</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo5.jpeg" alt="Memory 5">
+        <p>i like how aesthetic it is♡</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo6.jpeg" alt="Memory 6">
+        <p>oh pls we are so dumb</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo7.jpeg" alt="Memory 7">
+        <p>we are so in love</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo8.jpeg" alt="Memory 8">
+        <p>omg who is this baddie(thats my boyfriend)</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo9.jpeg" alt="Memory 9">
+        <p>just u and me</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo10.jpeg" alt="Memory 10">
+        <p>remember how we panicked</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo11.jpeg" alt="Memory 11">
+        <p>omg who is this cool boy (that my boy hehe)</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/photo12.jpeg" alt="Memory 12">
+        <p>just us being us ♡</p>
+      </div>
+
+    </div>
+
+    <button class="game-btn" id="shufflePhotos">
+      SHUFFLE MEMORIES ↻
+    </button>
+    <button class="game-btn" id="restartGame">
+    RESTART GAME ↻
+    </button>
+
+    </div>
+   </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
